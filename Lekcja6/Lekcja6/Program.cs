@@ -10,6 +10,8 @@ namespace Lekcja6
     {
         static void Main(string[] args)
         {
+            ValueTypes();
+        
             for (; ;) //petla powtarzajaca sie w nieskonczonosc
             {
                 Greeting();
@@ -18,6 +20,26 @@ namespace Lekcja6
             }
         }
 
+        /// <summary>
+        /// Sprawdza max i min wartosc dla int i long
+        /// </summary>
+        private static void ValueTypes()
+        {
+            int maxInt = int.MaxValue;
+            int minInt = int.MinValue;
+            long maxLong = long.MaxValue;
+            long minLong = long.MinValue;
+
+            Console.WriteLine("maxInt =" +maxInt);
+            Console.WriteLine("minInt =" + minInt);
+            Console.WriteLine("maxLong =" + maxLong);
+            Console.WriteLine("minLong =" + minLong);
+
+        }
+
+        /// <summary>
+        /// Ustawienia
+        /// </summary>
         private static void Settings()
         {
             Console.ReadKey();
@@ -25,6 +47,9 @@ namespace Lekcja6
             Console.ResetColor();
         }
 
+        /// <summary>
+        /// Wypisujemy komunikat zalezny od wieku
+        /// </summary>
         private static void Age()
         {
             Console.Write("wpisz ile masz lat: ");
@@ -51,12 +76,16 @@ namespace Lekcja6
                 Console.WriteLine("Nie masz 18 lat, chcesz mleko?");
             }
         }
-
+  
+        /// <summary>
+        /// Wypisujemy powitanie uzytkownika
+        /// </summary>
         private static void Greeting()
         {
             Console.Write("Wpisz swoje imie: ");
             string name = Console.ReadLine();
             Console.WriteLine("Witaj, " + name);
         }
+
     }
 }
