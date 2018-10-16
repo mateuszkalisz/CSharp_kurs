@@ -9,7 +9,7 @@ namespace Lekcja7
     class StudentDiary
     {
         //stan(zmienne - pola)
-        List<float> ratings; //utworzenie listy ocen zmiennoprzecinkowych typu generycznego
+        List<float> ratings = new List<float>(); //utworzenie listy ocen zmiennoprzecinkowych typu generycznego
 
         //zachowania
 
