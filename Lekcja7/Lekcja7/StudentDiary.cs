@@ -8,10 +8,16 @@ namespace Lekcja7
 {
     class StudentDiary
     {
-        //stan(zmienne - pola)
-        List<float> ratings = new List<float>(); //utworzenie listy ocen zmiennoprzecinkowych typu generycznego
+        public StudentDiary()     // konstruktor (ctor+tab) inicjuje wartosci pol zerami jesli nie ma podanych argumentow, nie zwraca zadnych wartosci, tworzy nowy obiekt, ma taka sama nazwe jak nazwa klasy
+        {
+            ratings = new List<float>();
+        }
 
-        //zachowania
+        //stan(zmienne - pola)
+        List<float> ratings;
+        // jak inicjalizujemy w konstruktorze to nie trzeba inicjalizowac -> List<float> ratings = new List<float>(); //utworzenie listy ocen zmiennoprzecinkowych typu generycznego
+
+        //zachowania (metody)
 
         /// <summary>
         /// dodaje ocene do listy ocen
