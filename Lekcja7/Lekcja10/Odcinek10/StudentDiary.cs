@@ -28,41 +28,55 @@ namespace Odcinek10
             ratings.Add(rating);
         }
 
-        /// <summary>
-        /// oblicza srednia z ocen w dzienniczku
-        /// </summary>
-        /// <returns></returns>
-        public float CalculateAverage()
+        public static float maksymalna = 10f;
+        public static float minimalna = 0f;
+
+
+        internal DiaryStatistics ComputeStatistics()
         {
+            DiaryStatistics stats = new DiaryStatistics();
 
-            float sum = 0;
-            float avg = 0;
-            foreach (var rating in ratings)
-            {
-                sum += rating;
-            }
-            avg = sum / ratings.Count();
-
-            return avg;
+            /// <summary>
+            /// oblicza srednia z ocen w dzienniczku
+            /// </summary>
+            /// <returns></returns>
+                float sum = 0f;
+                stats.AverageGrade = 0f;
+                foreach (var rating in ratings)
+                {
+                    sum += rating;
+                }
+                stats.AverageGrade = sum / ratings.Count();
+                stats.MaxGrade = ratings.Max();
+                stats.MinGrade = ratings.Min();
+                return stats;
         }
 
-        /// <summary>
-        /// oblicza max liczbe z dzienniczka
-        /// </summary>
-        /// <returns></returns>
-        public float GiveMaxRating()
-        {
-            return ratings.Max();
-        }
+        public string Name;
 
-        /// <summary>
-        /// oblicza min liczbe z dzienniczka
-        /// </summary>
-        /// <returns></returns>
-        public float GiveMinRating()
-        {
-            return ratings.Min();
-        }
+        //public float CalculateAverage()
+        //{
+
+        //    float sum = 0;
+        //    float avg = 0;
+        //    foreach (var rating in ratings)
+        //    {
+        //        sum += rating;
+        //    }
+        //    avg = sum / ratings.Count();
+
+        //    return avg;
+        //}
+
+        //public float GiveMaxRating()
+        //{
+        //    return ratings.Max();
+        //}
+
+        //public float GiveMinRating()
+        //{
+        //    return ratings.Min();
+        //}
 
     }
 }
