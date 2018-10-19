@@ -1,0 +1,3 @@
+﻿1>------ Kompilacja rozpoczęta: Projekt: Diary.Test, Konfiguracja: Debug Any CPU ------
+1>  Diary.Test -> G:\eduCSharp\CSharp_kurs\Lekcja7\Diary.Test\bin\Debug\Diary.Test.dll
+========== Kompilacja: 1 zakończono powodzeniem, 0 zakończono niepowodzeniem, 3 zaktualizowano, 0 pominięto ==========
