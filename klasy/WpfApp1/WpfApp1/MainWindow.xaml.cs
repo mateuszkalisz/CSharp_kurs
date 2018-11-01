@@ -27,17 +27,17 @@ namespace WpfApp1
             var result = licznik.AddTwoNumbers(1, 3);
             ResultTextBlock.Text = result.ToString();
 
-            Human human1 = new Human();
-            human1.BirthDate = new DateTime(1994, 05, 04);
-            human1.Job = "enineer";
-            human1.Name = "Mateusz";
-            human1.Gender = "male";
+            Human human1 = new Human("Mateusz", Helps.Gender.male, new DateTime(1994, 05, 04));
+            //human1.BirthDate = new DateTime(1994, 05, 04);
+            //human1.Job = "enineer";
+            //human1.Name = "Mateusz";
+            //human1.Gender = "male";
 
-            Human human2 = new Human();
-            human2.BirthDate = new DateTime(1994, 09, 25);
-            human2.Job = "logistics";
-            human2.Name = "Maja";
-            human2.Gender = "female";
+            Human human2 = new Human("Maja", Helps.Gender.famale, new DateTime(1994, 09, 25));
+            //human2.BirthDate = new DateTime(1994, 09, 25);
+            //human2.Job = "logistics";
+            //human2.Name = "Maja";
+            //human2.Gender = "female";
 
             List<Human> list1 = new List<Human>();
             list1.Add(human1);
