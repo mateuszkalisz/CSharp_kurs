@@ -7,17 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="ResultTextBlock" HorizontalAlignment="Left" Margin="328,32,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="63" Width="112"/>
-        <ListView x:Name="List1ListView" HorizontalAlignment="Left" Height="203" Margin="122,132,0,0" VerticalAlignment="Top" Width="560">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="329*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="ResultTextBlock" HorizontalAlignment="Left" Margin="206,32,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="63" Width="112" Grid.Column="1"/>
+        <ListView x:Name="List1ListView" HorizontalAlignment="Left" Height="203" Margin="0,132,0,0" VerticalAlignment="Top" Width="560" Grid.Column="1">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Name}"/>
                     <GridViewColumn DisplayMemberBinding="{Binding Gender}"/>
                     <GridViewColumn DisplayMemberBinding="{Binding BirthDate}"/>
                     <GridViewColumn DisplayMemberBinding="{Binding Age}"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Login}"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Password}"/>
                 </GridView>
             </ListView.View>
         </ListView>
+        <TextBlock x:Name="AgeTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="457,68,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

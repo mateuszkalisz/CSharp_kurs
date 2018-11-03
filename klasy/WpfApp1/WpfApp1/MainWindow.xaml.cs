@@ -33,7 +33,7 @@ namespace WpfApp1
             //human1.Name = "Mateusz";
             //human1.Gender = "male";
 
-            Human human2 = new Human("Maja", Helps.Gender.famale, new DateTime(1994, 09, 25));
+            Human human2 = new Human("Maja", Helps.Gender.famale, new DateTime(1994, 09, 25), "trudnehaslohehe", "luckylogin");
             //human2.BirthDate = new DateTime(1994, 09, 25);
             //human2.Job = "logistics";
             //human2.Name = "Maja";
@@ -44,6 +44,8 @@ namespace WpfApp1
             list1.Add(human2);
             List1ListView.ItemsSource = list1;
 
+
+            AgeTextBlock.Text = human1.Age.ToString();
         }
     }
 }
