@@ -36,8 +36,6 @@ namespace WpfApp1
             //Age = DateTime.Now.Year - BirthDate.Year;
         }
 
-
-
         public Human(string name, Gender gender, DateTime birthDate, string password, string login)
         {
             Name = name;
@@ -48,6 +46,8 @@ namespace WpfApp1
             Login = CheckLogin(login) ? login : "Wrong login";
             //Age = DateTime.Now.Year - BirthDate.Year;
         }
+
+
 
         #region przeciazanie metody obliczania wieku
         public static int CalcAge(DateTime BirthDate)

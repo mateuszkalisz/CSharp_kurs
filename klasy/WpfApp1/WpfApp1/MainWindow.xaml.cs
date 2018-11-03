@@ -44,6 +44,32 @@ namespace WpfApp1
             list1.Add(human2);
             List1ListView.ItemsSource = list1;
 
+            for (int i = 0; i < list1.Count; i++)
+            {
+                var a = list1.ElementAt(i);
+            }
+
+            foreach (var item in list1)
+            {
+                var a = item;
+            }
+
+            int counterWhile = 0;
+
+            while (counterWhile < list1.Count)
+            {
+                var a = list1.ElementAt(counterWhile);
+                counterWhile++;
+            }
+
+            int counterDoWhile = 0;
+
+            do
+            {
+                var a = list1.ElementAt(counterDoWhile);
+                counterDoWhile++;
+
+            } while (counterDoWhile < list1.Count);
 
             AgeTextBlock.Text = human1.Age.ToString();
         }
