@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntLifeConsole", "AntLifeConsole\AntLifeConsole.csproj", "{76AB33A6-69EF-44AE-9135-68A46822153A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76AB33A6-69EF-44AE-9135-68A46822153A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76AB33A6-69EF-44AE-9135-68A46822153A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76AB33A6-69EF-44AE-9135-68A46822153A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76AB33A6-69EF-44AE-9135-68A46822153A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BC9222F-B40F-4113-9459-FC9010705BD9}
+	EndGlobalSection
+EndGlobal
