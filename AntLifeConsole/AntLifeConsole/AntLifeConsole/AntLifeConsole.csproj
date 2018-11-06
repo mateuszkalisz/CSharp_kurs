@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AntLifePCL\AntLifePCL.csproj">
+      <Project>{1a396872-857d-4ae9-b59c-e5c1a3146795}</Project>
+      <Name>AntLifePCL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

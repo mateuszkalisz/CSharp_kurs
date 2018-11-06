@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntLifeConsole", "AntLifeConsole\AntLifeConsole.csproj", "{76AB33A6-69EF-44AE-9135-68A46822153A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntLifePCL", "AntLifePCL\AntLifePCL.csproj", "{1A396872-857D-4AE9-B59C-E5C1A3146795}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{76AB33A6-69EF-44AE-9135-68A46822153A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76AB33A6-69EF-44AE-9135-68A46822153A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76AB33A6-69EF-44AE-9135-68A46822153A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A396872-857D-4AE9-B59C-E5C1A3146795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A396872-857D-4AE9-B59C-E5C1A3146795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A396872-857D-4AE9-B59C-E5C1A3146795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A396872-857D-4AE9-B59C-E5C1A3146795}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
