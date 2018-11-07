@@ -92,21 +92,36 @@ namespace AntLifeConsole
             #endregion
 
             #region Dictionary
+            //klucz nie moze sie powtarzac
 
-            Dictionary<int, TestClass> a = new Dictionary<int, TestClass>();
+            //Dictionary<int, TestClass> a = new Dictionary<int, TestClass>();
 
-            a.Add(1, new TestClass { TestClassID = 1, TestClassName = "test1" });
-            a.Add(2, new TestClass { TestClassID = 11, TestClassName = "test2" });
-            a.Add(3, new TestClass { TestClassID = 111, TestClassName = "test3" });
-            a.Add(4, new TestClass { TestClassID = 1111, TestClassName = "test4" });
+            //a.Add(1, new TestClass { TestClassID = 1, TestClassName = "test1" });
+            //a.Add(2, new TestClass { TestClassID = 11, TestClassName = "test2" });
+            //a.Add(3, new TestClass { TestClassID = 111, TestClassName = "test3" });
+            //a.Add(4, new TestClass { TestClassID = 1111, TestClassName = "test4" });
 
-            foreach (var i in a)
-            {
-                Console.WriteLine(i.Key + " | " + i.Value.TestClassID + " | " + i.Value.TestClassName);
-            }
+            //foreach (var i in a)
+            //{
+            //    Console.WriteLine(i.Key + " | " + i.Value.TestClassID + " | " + i.Value.TestClassName);
+            //}
 
             //Console.WriteLine(a[1].TestClassName); //pierwszyy element wg klucza (indeksu)
             //Console.WriteLine(a.ElementAt(0).Value.TestClassName; // pierwszy element wg indeksu jak dla tablic
+
+            #endregion
+
+            #region KeyValuePair
+            //klucz moze sie powtarzac
+            
+            KeyValuePair<int, TestClass> collectionA = new KeyValuePair<int, TestClass>(1, new TestClass { TestClassID = 1, TestClassName = "uwemheh1" });
+
+            KeyValuePair<int, TestClass> collectionB = new KeyValuePair<int, TestClass>(1, new TestClass { TestClassID = 2, TestClassName = "uwemheh2" });
+
+            List<KeyValuePair<int, TestClass>> listofKVP = new List<KeyValuePair<int, TestClass>>();
+
+            listofKVP.Add(collectionA);
+            listofKVP.Add(collectionB);
 
             #endregion
 
