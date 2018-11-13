@@ -10,5 +10,28 @@ namespace AntLifePCL.TestClass
     {
         public int TestClassID { get; set; }
         public string TestClassName { get; set; }
+
+        private int naszaKlasa;
+
+        public int NaszaKlasa
+        {
+            get { return naszaKlasa; }
+            set
+            {
+                if (naszaKlasa < 10)
+                {
+                    naszaKlasa = 10;
+                }
+                    
+                else
+                {
+                    naszaKlasa = value;
+                }
+                    
+            }
+        }
+
+        
+
     }
 }

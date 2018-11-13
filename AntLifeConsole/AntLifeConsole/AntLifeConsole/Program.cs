@@ -113,20 +113,22 @@ namespace AntLifeConsole
 
             #region KeyValuePair
             //klucz moze sie powtarzac
-            
-            KeyValuePair<int, TestClass> collectionA = new KeyValuePair<int, TestClass>(1, new TestClass { TestClassID = 1, TestClassName = "uwemheh1" });
 
-            KeyValuePair<int, TestClass> collectionB = new KeyValuePair<int, TestClass>(1, new TestClass { TestClassID = 2, TestClassName = "uwemheh2" });
+            //KeyValuePair<int, TestClass> collectionA = new KeyValuePair<int, TestClass>(1, new TestClass { TestClassID = 1, TestClassName = "uwemheh1" });
 
-            List<KeyValuePair<int, TestClass>> listofKVP = new List<KeyValuePair<int, TestClass>>();
+            //KeyValuePair<int, TestClass> collectionB = new KeyValuePair<int, TestClass>(1, new TestClass { TestClassID = 2, TestClassName = "uwemheh2" });
 
-            listofKVP.Add(collectionA);
-            listofKVP.Add(collectionB);
+            //List<KeyValuePair<int, TestClass>> listofKVP = new List<KeyValuePair<int, TestClass>>();
+
+            //listofKVP.Add(collectionA);
+            //listofKVP.Add(collectionB);
 
             #endregion
 
+            
 
             Console.ReadKey();
+            
         }
     }
 }
