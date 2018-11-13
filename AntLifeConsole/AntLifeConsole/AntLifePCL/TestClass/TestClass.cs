@@ -11,6 +11,8 @@ namespace AntLifePCL.TestClass
         public int TestClassID { get; set; }
         public string TestClassName { get; set; }
 
+        #region Wykorzystanie pol zamiast hermetyzowania zmiennej
+
         private int naszaKlasa;
 
         public int NaszaKlasa
@@ -27,11 +29,28 @@ namespace AntLifePCL.TestClass
                 {
                     naszaKlasa = value;
                 }
-                    
+   
             }
         }
 
+        #endregion
+
         
+        #region Hermetyzacja zmiennej
+
+        private int _wiek;
+
+        public int GetAge()
+        {
+            return _wiek;
+        }
+
+        public void SetAge(int wiek)
+        {
+            _wiek = wiek;
+        }
+
+        #endregion
 
     }
 }

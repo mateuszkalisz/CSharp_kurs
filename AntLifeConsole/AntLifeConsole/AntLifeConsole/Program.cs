@@ -1,4 +1,5 @@
-﻿using AntLifePCL.TestClass;
+﻿using AntLifePCL.Poli;
+using AntLifePCL.TestClass;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,19 @@ using System.Threading.Tasks;
 
 namespace AntLifeConsole
 {
+
+    #region Enumy
+    enum TestEnum
+    {
+        Poniedzialek =10,
+        Wtorek,
+        Sroda    
+    }
+    #endregion
+
     class Program
     {
+
         static void Main(string[] args)
         {
             #region Tablica jednowymiarowa
@@ -125,10 +137,80 @@ namespace AntLifeConsole
 
             #endregion
 
-            
+            #region HermeryzacjaStatyczna
+            //Console.WriteLine(Dodawanie(2,3));
+            //Console.WriteLine(Dodawanie(2,3,5));
+            #endregion
+
+            #region OdwolanieDoEnuma
+
+            //Console.WriteLine((int)TestEnum.Wtorek);
+
+            //TestEnum nowyEnum = TestEnum.Wtorek;
+
+            //switch(nowyEnum)
+            //{
+            //    case TestEnum.Poniedzialek:
+            //        break;
+            //    case TestEnum.Wtorek:
+            //        break;
+            //    case TestEnum.Sroda:
+            //        break;
+            //    default:
+            //        break;
+            //}
+
+
+            #endregion
+
+            #region POLIMORFIZM DYNAMICZNY
+
+            BaseBody bb = new BaseBody();
+            bb.CreateBase("Baza bazowa", 20.4f, 31.4f);
+
+            MilitaryBase mb = new MilitaryBase();
+            mb.CreateBase("Wojskowa", 9.9f, 2.2f);
+
+            MilitaryBase mb2 = new MilitaryBase();
+            mb2.CreateBase("Bazwa wojskowa z ochrona", 11.1f, 22.2f, 100);
+
+            BaseBody mbb = new MilitaryBase();
+            mbb.CreateBase("base body o ksztalcie military base", 21.1f, 32.2f);
+
+            //BaseBody mbb2 = new MilitaryBase();
+            //mbb2.CreateBase("base body o ksztalcie military base", 21.1f, 32.2f, 200);
+            //NIE MOZNA WYKONAC BO ROBIMY BASEBODY NA KSZTALT MILITARYBODY A TAM NIE MA METODY POLIMORFICZNEJ (DYNAMICZNEJ-NADPISYWANEJ) Z PRZECIAZENIEM TZN. Z WALLRESISTANCE
+
+            //MilitaryBase mbbb() = new BaseBody();
+            //NIE DZIALA BO POLIMORFIZM DYNAMICZNY DZIALA ZAWSZE W DOL NIGDY W GORE, NP. DZIECIAK NIGDY NIE MOZE PRZYJAC KSZTALTU RODZICA ALE RODZIC ZAWSZE MOZE PRZYJAC KSZTALT DZIECKA
+            #endregion
+
+
 
             Console.ReadKey();
-            
+
+
         }
+
+        #region Hermetyzacja statyczna
+        // Polega na przeciazaniu metody
+
+        public static int Dodawanie(int a, int b)
+        {
+            return a + b;
+        }
+
+        public static int Dodawanie(int a, int b, int c)
+        {
+            return a + b + c;
+        }
+
+        #endregion
+
+
     }
+
+
+
+
 }

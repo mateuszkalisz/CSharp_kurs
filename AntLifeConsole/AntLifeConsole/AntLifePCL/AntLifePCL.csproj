@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Poli\BaseBody.cs" />
+    <Compile Include="Poli\MilitaryBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestClass\TestClass.cs" />
   </ItemGroup>
