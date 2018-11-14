@@ -9,6 +9,22 @@ namespace AntLifePCL.Poli
 {
     public class BaseBody
     {
+        #region Konstruktory
+
+        public BaseBody()
+        {
+
+        }
+
+        public BaseBody(string Name, float Longitude, float Latitude)
+        {
+            this.Name = Name;
+            this.Longitude = Longitude;
+            this.Latitude = Latitude;
+        }
+
+        #endregion
+
         #region polimorfizm dynamiczny
 
         public virtual string Name { get; set; }

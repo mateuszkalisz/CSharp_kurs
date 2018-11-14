@@ -9,6 +9,21 @@ namespace AntLifePCL.Poli
 {
     public class MilitaryBase : BaseBody
     {
+        #region Konstruktor z dziedziczenia
+        public MilitaryBase(string Name, float Longitude, float Latitude) : base(Name, Longitude, Latitude)
+        {
+            WallResistance = 0;
+        }
+
+        public MilitaryBase(string Name, float Longitude, float Latitude, int WallResistance) : base(Name, Longitude, Latitude)
+        {
+            this.WallResistance = WallResistance;
+        }
+        #endregion
+
+
+
+
         #region polimorfizmDynamicznyy
 
         public int WallResistance { get; set; }
@@ -31,7 +46,7 @@ namespace AntLifePCL.Poli
         }
 
         #endregion
-
-
     }
+
 }
+

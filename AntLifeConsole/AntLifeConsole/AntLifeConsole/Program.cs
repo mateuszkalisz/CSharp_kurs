@@ -166,16 +166,16 @@ namespace AntLifeConsole
             #region POLIMORFIZM DYNAMICZNY
 
             BaseBody bb = new BaseBody();
-            bb.CreateBase("Baza bazowa", 20.4f, 31.4f);
+            //bb.CreateBase("Baza bazowa", 20.4f, 31.4f);  //bo stworzylem konstruktor
 
-            MilitaryBase mb = new MilitaryBase();
-            mb.CreateBase("Wojskowa", 9.9f, 2.2f);
+            MilitaryBase mb = new MilitaryBase("Wojskowa", 9.9f, 2.2f);
+            //mb.CreateBase("Wojskowa", 9.9f, 2.2f);  //bo stworzylem konstruktor
 
-            MilitaryBase mb2 = new MilitaryBase();
-            mb2.CreateBase("Bazwa wojskowa z ochrona", 11.1f, 22.2f, 100);
+            MilitaryBase mb2 = new MilitaryBase("Bazwa wojskowa z ochrona", 11.1f, 22.2f, 100);
+            //mb2.CreateBase("Bazwa wojskowa z ochrona", 11.1f, 22.2f, 100);  //bo stworzylem konstruktor
 
-            BaseBody mbb = new MilitaryBase();
-            mbb.CreateBase("base body o ksztalcie military base", 21.1f, 32.2f);
+            BaseBody mbb = new MilitaryBase("base body o ksztalcie military base", 21.1f, 32.2f);
+            //mbb.CreateBase("base body o ksztalcie military base", 21.1f, 32.2f); //bo stworzylem konstruktor
 
             //BaseBody mbb2 = new MilitaryBase();
             //mbb2.CreateBase("base body o ksztalcie military base", 21.1f, 32.2f, 200);
