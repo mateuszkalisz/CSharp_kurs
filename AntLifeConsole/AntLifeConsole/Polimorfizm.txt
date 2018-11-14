@@ -1,0 +1,13 @@
+﻿„AntLifeConsole.exe” (CLR v4.0.30319: DefaultDomain): załadowano „C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll”. Pominięto ładowanie symboli. Moduł jest zoptymalizowany i włączono opcję debugera „Tylko mój kod”.
+„AntLifeConsole.exe” (CLR v4.0.30319: DefaultDomain): załadowano „G:\eduCSharp\CSharp_kurs\AntLifeConsole\AntLifeConsole\AntLifeConsole\bin\Debug\AntLifeConsole.exe”. Symbole zostały załadowane.
+„AntLifeConsole.exe” (CLR v4.0.30319: AntLifeConsole.exe): załadowano „G:\eduCSharp\CSharp_kurs\AntLifeConsole\AntLifeConsole\AntLifeConsole\bin\Debug\AntLifePCL.dll”. Symbole zostały załadowane.
+„AntLifeConsole.exe” (CLR v4.0.30319: AntLifeConsole.exe): załadowano „C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll”. Pominięto ładowanie symboli. Moduł jest zoptymalizowany i włączono opcję debugera „Tylko mój kod”.
+„AntLifeConsole.exe” (CLR v4.0.30319: AntLifeConsole.exe): załadowano „C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll”. Pominięto ładowanie symboli. Moduł jest zoptymalizowany i włączono opcję debugera „Tylko mój kod”.
+„AntLifeConsole.exe” (CLR v4.0.30319: AntLifeConsole.exe): załadowano „C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll”. Pominięto ładowanie symboli. Moduł jest zoptymalizowany i włączono opcję debugera „Tylko mój kod”.
+„AntLifeConsole.exe” (CLR v4.0.30319: AntLifeConsole.exe): załadowano „C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll”. Pominięto ładowanie symboli. Moduł jest zoptymalizowany i włączono opcję debugera „Tylko mój kod”.
+BaseBody - Name: Baza bazowa
+BaseBody - Localization: 20,4 | 31,4
+BaseBody - Name: Wojskowa
+BaseBody - Localization: 9,9 | 2,2
+MilitaryBase - Wall Resistance: 0
+Program „[16216] AntLifeConsole.exe” zakończył działanie z kodem -1 (0xffffffff).
