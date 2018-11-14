@@ -21,5 +21,11 @@ namespace Sport
             Console.WriteLine("Jump: " + Jump);
         }
 
+        public override void Age(int Age)
+        {
+            Console.WriteLine("Age: " + Age);
+        }
+
+
     }
 }

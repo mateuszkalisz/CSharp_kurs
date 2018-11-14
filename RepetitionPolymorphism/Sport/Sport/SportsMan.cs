@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sport
 {
-    public class SportsMan
+    public abstract class SportsMan
     {
         public virtual string Name { get; set; }
         public virtual string KindOfSport { get; set; }
@@ -18,6 +18,9 @@ namespace Sport
             Console.WriteLine("Kind of sport: " + KindOfSport);
             Console.WriteLine("Popularity: " + Popularity);
         }
+
+        public abstract void Age(int Age); // jak tworzymy metode abstrakcyjna to i klasa musi byc abstrakcyjna - wtedy kazda klasa ktora dziedziczy z klasy abstrakcyjnej musi uzyc tej metody
+
 
     }
 }

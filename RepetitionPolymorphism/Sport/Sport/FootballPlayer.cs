@@ -21,5 +21,10 @@ namespace Sport
             Console.WriteLine("Shoot Power: " + ShootPower);
         }
 
+        public override void Age(int Age)
+        {
+            Console.WriteLine("Age: " + Age);
+        }
+
     }
 }
