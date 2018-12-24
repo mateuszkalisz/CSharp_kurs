@@ -6,8 +6,18 @@ namespace ConsoleApp1Polimorfizm
 {
     class MilitaryBase : Base
     {
+        public MilitaryBase(string Name, float Longitude, float Latitude) : base(Name, Longitude, Latitude)
+        {
+            WallResistance = 0;
+        }
+
+        public MilitaryBase(string Name, float Longitude, float Latitude, int WallResistance) : base(Name, Longitude, Latitude)
+        {
+            this.WallResistance = WallResistance;
+        }
+
         //fields
-        
+
         public int WallResistance { get; set; }
 
         public override void CreateBase(string Name, float Longitude, float Latitude)
